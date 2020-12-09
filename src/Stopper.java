@@ -98,8 +98,9 @@ public class Stopper extends JFrame{
         lb1.setBounds(200,30,300,50);
         this.panel.add(lb1);
 
-
+//push pls
         timer = new Timer(1, idozitoListener);
+
 
 
         btnStart.addActionListener(new ActionListener() {
