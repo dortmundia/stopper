@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 import javax.swing.Timer;
 
+
 public class Stopper extends JFrame{
     JPanel panel;
     JButton btnStart,btnReset;
@@ -39,6 +40,7 @@ public class Stopper extends JFrame{
         }
     };
 
+
     private void setRunning(boolean running)
     {
         isRunning=running;
@@ -54,10 +56,8 @@ public class Stopper extends JFrame{
             btnStart.setText(startString);
             btnReset.setText(resetString);
         }
-
     }
 
-    //      private void reszidot()    {    }
 
     private String formazas(int ertek )
     {
@@ -72,9 +72,7 @@ public class Stopper extends JFrame{
     }
 
 
-
     private void init() {
-
 
 
         this.setTitle("Stopper");
@@ -98,7 +96,7 @@ public class Stopper extends JFrame{
         lb1.setBounds(200,30,300,50);
         this.panel.add(lb1);
 
-//push pls
+
         timer = new Timer(1, idozitoListener);
 
 
@@ -116,6 +114,7 @@ public class Stopper extends JFrame{
         lista= new JList<>(model);
         lista.setBounds(200,100,250,250);
         this.panel.add(lista);
+
 
         aLista=new ArrayList<>();
 
@@ -137,11 +136,6 @@ public class Stopper extends JFrame{
         });
 
 
-
-
-
-
         this.setVisible(true);
     }
-
 }
